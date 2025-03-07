@@ -4,277 +4,424 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio </title>
-    <link rel="icon" href="assests/images/home-page-img.jpg" />
+    <link rel="icon" href="assets/images/portfolio-logo.png" />
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Madimi+One&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mada:wght@200..900&family=Madimi+One&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <main>
-        <header class="header">
-          <nav>
-            <!-- <ul>
-              <li><a href="#hero">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">services</a></li>
-              <li><a href="#skills">skills</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul> -->
+      <header>
 
-            
-              <a href="#hero">Home</a>
-              <a href="#about">About</a>
-              <a href="#services">services</a>
-              <a href="#skills">skills</a>
-              <a href="#projects">Projects</a>
-              <a href="#contact">Contact</a>
-            
-          </nav>
-        </header>
-  
-        <section id="hero">
-          <div class="text">
+      <!-- Burger Image Icon -->
+        <!-- <div class="burger-icon">
+            <img src="assets/images/burger-icon-menu.png" alt="burger menu" id="burger-icon-img">
+        </div> -->
 
-            <h3>Hello It's me</h3>
-              <h1>Sachini Imbulagoda</h1>
-              
-              <h3>And I am a <span style="color: #9747FF;">Software Engineering Student & UX UI Designer</span></h3>  <br />
-               
-            <div class="my-img1">
-              <img
-                src="/assests/images/home-page-img.jpg"
-                alt="My Image 1"
-                style="width: 300px; height: 400px; object-fit: cover"/>
-            </div>
-
-            <p>"As a software engineering student, I leverage animation as a third dimension to simplify complex interactions, using purposeful motion to guide users and enhance their understanding—never just for decoration, but for clarity and improved user experience."</p>
-            
-            <br/>
-
-            
-            <a href="https://www.linkedin.com/in/sachini-imbulagoda-6a767b311/" target="_blank"> 
-                  <img 
-                  src="assests/images/linkedin.png" 
-                  alt="linkedin"
-                  style="width: 30px; height: 30px; object-fit: cover;" />
-             </a>
-
-            <a href="https://github.com/sachi-thakshi" target="_blank"> 
-                  <img 
-                  src="assests/images/github.png" 
-                  alt="github"
-                  style="width: 30px; height: 30px; object-fit: cover;" />
-            </a>
-
-            <a href="https://www.instagram.com/sachiniimbulagoda?igsh=MXp1b3d2eHRsZWM4&utm_source=qr" target="_blank"> 
-                  <img 
-                  src="assests/images/instagram.png" 
-                  alt="instagram"
-                  style="width: 30px; height: 30px; object-fit: cover;" />
-            </a>
-            
-            <a href="https://www.facebook.com/share/1EKAWVHvr2/?mibextid=wwXIfr" target="_blank"> 
-                  <img 
-                  src="assests/images/facebook.png" 
-                  alt="facebook"
-                  style="width: 30px; height: 30px; object-fit: cover;" />
-            </a>
-          
-
-            <br/>
-            <br/>
-
-              <button><a href="#" style="color: #9747FF;">Download CV</a></button>
-              <button><a href="#" style="color: #000;">Hire Me</a></button>
-            </div>
-            <br />
-          </div>
-        </section>
-  
-        <section id="about">
-            <div class="section-title">
-                <h1>About <span style="color: #9747FF;">Me</span></h1>
-                <h3>Software Engineer</h3>
-            </div>
-            <div id="my-img2">
-                <img
-                src="assests/images/about-page-img.jpg"
-                alt="My Image 2"
-                style="width: 300px; height: 400px; object-fit: cover"
-                />
-            </div>
-
-            <div class="about-me">
-                <p>
-                    I'm a software engineer with expertise in building efficient, scalable applications. Skilled in a variety of programming languages and frameworks, I thrive on solving complex problems and delivering high-quality solutions. With a focus on continuous learning and collaboration, I aim to create user-centric products that meet both business and technical goals. Explore my portfolio to see how I bring innovative ideas to life through code.
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+      </header>
+      <main>
+            <section id="hero">
+            <div class="hero-content">
+                <h3>Hello It's Me</h3>
+                <h1>Sachini Imbulagoda</h1>
+                <h4>And I'm a 
+                  <span class="highlight">Software Engineering Student & UI / UX Engineer</span>
+                </h4>
+                <p>"As a software engineering student, I leverage animation as a third dimension to simplify complex interactions, 
+                    using purposeful motion to guide users and enhance their understanding—never just for decoration, but for clarity 
+                    and improved user experience."
                 </p>
-            </div>
-             
-            <div class="my-informations">
-                <p><span style="color: #9747FF;">Name :</span>  I.D.Sachini Thakshila Imbulagoda</p>
-                <p><span style="color: #9747FF;">Age :</span> 20</p>
-                <p><span style="color: #9747FF;">Dath Of Birth :</span> 18 <sup>th</sup>  of September 2004</p>
-                <p><span style="color: #9747FF;">City :</span> Bandarawela </p>
-                <p><span style="color: #9747FF;">Email :</span> sachiniimbulagoda@gmail.com</p>
-        </section>
-
-        <br/>
-        <section id="services">
-          <div class="section-title">
-            <h1>Our Services</h1    >
-          </div>
-
-          <div class="my-services">
-            <h3><span style="color: #9747FF;">Custom Software Development</span></h3>
-            <p>
-                “Transforming ideas into reality, one app at a time. Dive into my portfolio of custom software development projects, where creativity and functionality come together to create intuitive, user-driven digital experiences.”
-            </p>
-  
-            <h3><span style="color: #9747FF;">UI / UX Development</span></h3>
-            <p>
-                "Designing intuitive experiences, one interface at a time. Explore my portfolio of UI/UX projects, where creativity and user-centric design come together to craft seamless, engaging digital journeys."
-            </p>
-  
-            <h3><span style="color: #9747FF;">Web Development</span></h3>
-            <p>
-                "Building the web, one site at a time. Explore my portfolio of web development projects, where cutting-edge technology and responsive design come together to create fast, engaging, and user-friendly digital experiences."
-            </p>
-        </div>
-        </section>
-  
-        <br/>
-        <section id="skills">
-          <div class="section-title">
-            <h1><span style="color: #9747FF;">My</span> Skills</h1>
-            <p>"Shaping the web with skill and creativity. This section showcases the technologies and approaches I've refined to develop responsive, efficient websites that address challenges and deliver exceptional user experiences."</p>
-          </div>
-  
-          <div class="my-skills">
-
-            <h3>HTML</h3>
-            <div class="container">
-              <div class="skills html">95%</div>
-            </div>
-  
-            <h3>CSS</h3>
-            <div class="container">
-              <div class="skills css">80%</div>
-            </div>
-  
-            <h3>JavaScript</h3>
-            <div class="container">
-              <div class="skills js">80%</div>
-            </div>
-  
-            <h3>SQL</h3>
-            <div class="container">
-              <div class="skills sql">98%</div>
-            </div>
-  
-            <h3>Java</h3>
-            <div class="container">
-              <div class="skills java">90%</div>
-            </div>
-  
-            <h3>PhotoShop</h3>
-            <div class="container">
-              <div class="skills photoshop">60%</div>
-            </div>
-  
-            <h3>JavaFX</h3>
-            <div class="container">
-              <div class="skills javafx">95%</div>
-            </div>
-        </section>
-        
-        <br/>
-        <section id="projects">
-            <div class="section-title">
-                <h1>My Projects</h1>
-            </div>
-    
-            <div class="my-projects">
-
-                <div class="tic-tac-toe">
-                    <img
-                        src="assests/images/tic-tac-toe.png"
-                        alt="Project 1"
-                        style="width: 400px; height: 400px; object-fit: cover"/>
-
-                        <h4>Tic - Tac -Toe Game</h4>
-                        <p>“This  game, built with Java, lets two players take turns marking X's and O's on a 3x3 grid. The game detects wins and draws, providing an interactive experience while demonstrating Java's ability to handle user input and game logic.”</p>
+                    <div class="social-links">
+                        <div id="icon-cricle">
+                          <a href="https://www.linkedin.com/in/sachini-imbulagoda-6a767b311/" target="_blank">
+                            <img src="/assets/images/hero-img/linkedin.png" alt="LinkedIn" id="linkedin">
+                          </a>
+                        </div>
+                        <div id="icon-cricle">
+                          <a href= "https://github.com/sachi-thakshi" target="_blank">
+                            <img src="/assets/images/hero-img/github.png" alt="github" id="github">
+                          </a>
+                        </div>  
+                        <div id="icon-cricle">
+                          <a href="https://www.instagram.com/sachiniimbulagoda?igsh=MXp1b3d2eHRsZWM4&utm_source=qr" target="_blank">
+                            <img src="/assets/images/hero-img/instagram.png" alt="Instagram" id="instagram">
+                          </a>
+                        </div>
+                        <div id="icon-cricle">
+                          <a href="https://www.facebook.com/share/1EKAWVHvr2/?mibextid=wwXIfr" target="_blank">
+                            <img src="/assets/images/hero-img/facebook.png" alt="Facebook" id="facebook">
+                          </a>
+                        </div>    
                     </div>
+                    <div class="buttons">
+                      <a href="#" class="download-cv">Download CV</a>
+                      <a href="mailto:sachiniimbulagoda@gmail.com" class="hire-me">Hire Me</a>
+                    </div>
+            </div>
                 
-                <br/>    
-                <div class="clothing-store">
-                <img
-                    src="assests/images/ciel-clothing-store.png"
-                    alt="Project 2"
-                    style="width: 500px; height: 300px; object-fit: cover"/>
+            <div class="hero-image">
+                    <img src="/assets/images/hero-img/home-page-img.jpg" alt="Sachini Imbulagoda">
+            </div>
 
-                    <h4>Clothing Store Management System</h4>
-                    <p>“This project, developed using Java, CSS, and JavaFX, creates a management application for a clothing retail store to streamline operations and enhance efficiency and customer satisfaction.”</p>
+                <div class="background-circles">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
-            </div>
-        </section>
+            </section>
+      
+            <section id="about">
+              <div class="about-image">
+                <img src="assets/images/about-img/about-page-img.jpg" alt="My Image 2"/>
+              </div>
 
-        <br/>
-        <section id="contact">
-            <div class="section-title">
-                <h1><span style="color: #9747FF;">Contact</span></h1>
-            </div>
-    
-            <div class="my-contact">
-
-              <div class="location">
-                <img 
-                src="assests/images/location.png" 
-                alt="location"
-                style="width: 30px; height: 30px; object-fit: cover;" />
-                <p>Address</p>
-                <p>No:170, Bingethanna, Kahagolla, Diyathalawa</p>
+              <div class="about-content">
+                    <h1>About <span class="me-highlight">Me</span></h1>
+                    <h3>Software Engineer</h3>
+                    <p id="paragraph">
+                          I'm a software engineer with expertise in building efficient, scalable applications. Skilled in a 
+                          variety of programming languages and frameworks, I thrive on solving complex problems and delivering 
+                          high-quality solutions. With a focus on continuous learning and collaboration, I aim to create 
+                          user-centric products that meet both business and technical goals. Explore my portfolio to see how I 
+                          bring innovative ideas to life through code.
+                    </p>
+                    <div class="my-informations">
+                      <p><span id="info">Name :</span>  I.D.Sachini Thakshila Imbulagoda</p>
+                      <p><span id="info">Age :</span> 20</p>
+                      <p><span id="info">Dath Of Birth :</span> 18 <sup>th</sup>  of September 2004</p>
+                      <p><span id="info">City :</span> Bandarawela </p>
+                      <p><span id="info">Email :</span> sachiniimbulagoda@gmail.com</p>
+                  </div>
               </div>
               
-              <div class="contact-number">
-                <img 
-                src="assests/images/contact no.png" 
-                alt="contact no"
-                style="width: 30px; height: 30px; object-fit: cover;" />
-                <p>Contact No</p>
-                <p>071 235 3785</p>
+                <div class="background-circles">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+
+            </section>
+
+            <section id="services">
+
+              <div class="services-content">
+                <h1>Our Services</h1>
+                <div class="my-services">
+                  <div class="service-box">
+                    <img src="/assets/images/services-img/customer-software-development.png" alt="customer-software-development">
+                    <h3>Custom Software Development</h3>
+                    <p>
+                        “Transforming ideas into reality, one app at a time. Dive into my portfolio of custom software development 
+                        projects, where creativity and functionality come together to create intuitive, user-driven digital 
+                        experiences.”
+                    </p>
+                  </div>
+                  
+                  <div class="service-box">
+                    <img src="/assets/images/services-img/ui-ux-development.png" alt="ui-ux-development">
+                    <h3>UI / UX Development</h3>
+                    <p>
+                        "Designing intuitive experiences, one interface at a time. Explore my portfolio of UI/UX projects, where 
+                        creativity and user-centric design come together to craft seamless, engaging digital journeys."
+                    </p>
+                  </div>
+        
+                  <div class="service-box" id="web-development">
+                    <img src="/assets/images/services-img/web-development.png" alt="web-development">
+                    <h3>Web Development</h3>
+                    <p>
+                      "Building the web, one site at a time. Explore my portfolio of web development projects, where cutting-edge 
+                      technology and responsive design come together to create fast, engaging, and user-friendly digital experiences."
+                    </p>
+                  </div>   
+                </div>
+      
               </div>
 
-              <div class="email">
-                <img 
-                src="assests/images/email.png" 
-                alt="contact no"
-                style="width: 30px; height: 30px; object-fit: cover;" />
-                <p>Email</p>
-                <a href="mailto:sachiniimbulagoda@gmail.com"> sachiniimbulagoda@gmail.com </a>
+              <div class="background-circles">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
               </div>
 
-              <br/>
-              <div class="email-me">
-                <label for="fistName"></label>
-                <input type="text" placeholder="Your Name" maxlength="3"/>
+            </section>
 
-                <label for="email"></label>
-                <input type="text" placeholder="Your Email" maxlength="3"/>
+            <section id="skills">
+              <div class="skills-content">
 
-                <br/>
-                <br/>
-                <textarea 
-                    name="message" 
-                    id="message" 
-                    placeholder="Message"
-                    rows="5"
-                    cols="80"
-                ></textarea>
-                <br/>
-                <button type="send">Send Message</button>
+                  <h1><span id="highlight-skills">My</span> Skills</h1>
+                  <p>"Shaping the web with skill and creativity. This section showcases the technologies and approaches I've 
+                    refined to develop responsive, efficient websites that address challenges and deliver exceptional user 
+                    experiences."
+                  </p>
+        
+                <div class="my-skills">
+
+                  <div class="my-skills-left">
+                        <div class="html">
+                            <div id="skill-name">
+                              <h3>HTML</h3>
+                              <h3>95%</h3>
+                            </div>
+                            <div class="progress-container">
+                              <div class="skills-html"></div>
+                            </div>
+                        </div>
+                    
+                        <div class="css">
+                            <div id="skill-name">
+                              <h3>CSS</h3>
+                              <h3>90%</h3>
+                            </div>
+                            <div class="progress-container">
+                              <div class="skills-css"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="js">
+                            <div id="skill-name">
+                              <h3>JavaScript</h3>
+                              <h3>80%</h3>
+                            </div>
+                            <div class="progress-container">
+                              <div class="skills-js"></div>
+                            </div>
+                        </div>
+
+                        <div class="sql">
+                            <div id="skill-name">
+                              <h3>SQL</h3>
+                              <h3>95%</h3>
+                            </div>
+                            <div class="progress-container">
+                              <div class="skills-sql"></div>
+                            </div>
+                        </div>
+                  </div>
+
+                  <div class="my-skills-right">
+                      <div class="java">
+                          <div id="skill-name">
+                            <h3>Java</h3>
+                            <h3>90%</h3>
+                          </div>
+                          <div class="progress-container">
+                            <div class="skills-java"></div>
+                          </div>
+                      </div>
+
+                      <div class="photoshop">
+                          <div id="skill-name">
+                            <h3>PhotoShop</h3>
+                            <h3>80%</h3>
+                          </div>
+                          <div class="progress-container">
+                            <div class="skills-photoshop"></div>
+                          </div>
+                      </div>
+
+                      <div class="javafx">
+                            <div id="skill-name">
+                              <h3>JavaFX</h3>
+                              <h3>95%</h3>
+                            </div>
+                            <div class="progress-container">
+                              <div class="skills-javafx"></div>
+                            </div>
+                      </div>
+                  </div>
+                </div>  
+              
+                <div class="icons-container">
+                    <img src="/assets/images/skills/css.png" alt="css">
+                    <img src="/assets/images/skills/figma.png" alt="figma">
+                    <img src="/assets/images/skills/html.png" alt="html">
+                    <img src="/assets/images/skills/intellij-IDE.jpg" alt="intellij">
+                    <img src="/assets/images/skills/java.png" alt="java">
+                    <img src="/assets/images/skills/javascript.png" alt="js">
+                    <img src="/assets/images/skills/linux.png" alt="linux">
+                    <img src="/assets/images/skills/photoshop.png" alt="photoshop">
+                    <img src="/assets/images/skills/picsart.png" alt="picsart">
+                    <img src="/assets/images/skills/scene-builder.png" alt="scene-builder">
+                    <img src="/assets/images/skills/sql.png" alt="sql">
+                    <img src="/assets/images/skills/vs-code.png" alt="vs-code">
+                </div>
               </div>
+                  <div class="background-circles">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                  </div>
+              
+            </section>
+            
+            <section id="projects">
+                <div class="project-content">
+                      <h1>My <span id="black-text">Projects</span></h1>
 
-            </div>
+                      <div class="my-projects">
+                          <div class="tic-tac-toe">
+                              <div class="tic-tac-toe-img">
+                                  <img src="assets/images/projects/tic-tac-toe.png" alt="Project-1">
+                              
+                                  <div class="tic-tac-toe-content">
+                                      <h4>Tic - Tac -Toe Game</h4>
+                                      <p>“This  game, built with Java, lets two players take turns marking X's and O's on a 3x3 grid. 
+                                        The game detects wins and draws, providing an interactive experience while demonstrating Java's 
+                                        ability to handle user input and game logic.”
+                                      </p>
+                                      <img src="/assets/images/projects/up.png" alt="arrow-up" id="arrow-up">
+                                </div>
+                            </div>   
+                          </div>
+                          
+                          <div class="ciel-clothing-store">
+                            <div class="ciel-clothing-store-img">
+                              <img src="assets/images/projects/ciel-clothing-store.png" alt="Project-2">
+                            
+                              <div class="clothing-store-content">
+                                    <h4>Clothing Store Management System</h4>
+                                    <p>“This project, developed using Java, CSS, and JavaFX, creates a management application for a 
+                                        clothing retail store to streamline operations and enhance efficiency and customer satisfaction.”
+                                    </p>
+                                    <img src="/assets/images/projects/up.png" alt="arrow-up" id="arrow-up">
+                              </div>
+                            </div> 
+                          </div>
+                      </div>
+                </div>
 
+                <div class="background-circles">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="contact-content">
+                    <h1>Contact</h1>
+                    <div class="details">
+                        <div class="contact-details">
+                          <div class="location">
+                              <div class="icon">
+                                  <div class="icon-circle"><img src="assets/images/contact/location.png" alt="location"/></div>
+                              </div>
+                              <div class="text">
+                                <p>Address</p>
+                                <p><span>No:170, Bingethanna, Kahagolla, Diyathalawa</span></p>
+                              </div>  
+                          </div>
+                          <div class="contact-number">
+                              <div class="icon">
+                                <div class="icon-circle"><img src="assets/images/contact/phone.png" alt="contact no"/></div>
+                              </div>
+                              <div class="text">
+                                <p>Contact No</p>
+                                <p><span>071 235 3785</span></p>
+                              </div>    
+                          </div>
+                          <div class="email">
+                              <div class="icon">
+                                <div class="icon-circle"><img src="assets/images/contact/email.png" alt="email"/></div>                            
+                              </div>
+                              <div class="text">
+                                <p>Email</p>
+                                <span><a href="mailto:sachiniimbulagoda@gmail.com"> sachiniimbulagoda@gmail.com </a></span>
+                              </div>                      
+                          </div>
+                        </div>
+
+                        <div class="email-details">
+                            <div class="email-me">
+                              <div class="first-line">
+                                <div class="your-name">
+                                  <input type="text" placeholder="Your Name" maxlength="100"/>
+                                </div> 
+                                <div class="your-email">
+                                  <input type="text" placeholder="Your Email" maxlength="100"/>
+                                </div>                                                         
+                              </div>
+                              <div class="subject">
+                                <input type="text" placeholder="Subject" maxlength="1000"/>
+                              </div>
+                              <textarea 
+                                  name="message" 
+                                  id="message" 
+                                  placeholder="Message"
+                                  rows="10"
+                                  cols="80"></textarea>
+                              <div class="button-div"><button type="send">Send Message</button></div>
+                            </div>
+                        </div> 
+                      </div>
+                </div>
+
+                <div class="background-circles">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </section>
       </main>
-    
 </body>
 </html>

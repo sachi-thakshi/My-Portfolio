@@ -1,0 +1,483 @@
+html, body {
+    max-width: 100%;
+    /* overflow-x: hidden; */
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+header{
+    background-color: rgba(43, 6, 54, 0.10);
+    width: 100%;
+    height: 8vh;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: end;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    z-index: 1000;
+}
+nav > ul{
+    display: flex;
+    list-style: none;
+}
+nav > ul > li{
+    margin: 0 40px;
+}
+nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+nav > ul > li > a:hover {
+    color: #B38CE5;
+}
+
+
+
+/* background-circles */
+.background-circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.background-circles div {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(179, 140, 229, 0.21);
+    opacity: 0.5;
+    animation: circle-animation 3s infinite;
+}
+
+.background-circles div:nth-child(1) {
+    width: 50px;
+    height: 50px;
+    top: 5%;
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.background-circles div:nth-child(2) {
+    width: 50px;
+    height: 50px;
+    top: 20%;
+    left: 25%;
+    animation-delay: 0.5s;
+}
+
+.background-circles div:nth-child(3) {
+    width: 50px;
+    height: 50px;
+    top: 25%;
+    left: 40%;
+    animation-delay: 0.5s;
+}
+
+.background-circles div:nth-child(4) {
+    width: 100px;
+    height: 100px;
+    top: 15%;
+    left: 90%;
+}
+
+.background-circles div:nth-child(5) {
+    width: 50px;
+    height: 50px;
+    top: 70%;
+    left: 60%;
+}
+
+.background-circles div:nth-child(6) {
+    width: 100px;
+    height: 100px;
+    top: 85%;
+    left: 40%;
+}
+
+.background-circles div:nth-child(7) {
+    width: 30px;
+    height: 30px;
+    top: 95%;
+    left: 20%;
+}
+
+.background-circles div:nth-child(8) {
+    width: 150px;
+    height: 150px;
+    top: 80%;
+    left: 80%;
+}
+
+.background-circles div:nth-child(9) {
+    width: 30px;
+    height: 30px;
+    top: 90%;
+    left: 95%;
+}
+
+@keyframes circle-animation {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+#hero,
+#about,
+#services,
+#skills,
+#projects,
+#contact {
+    position: relative;
+}
+
+/* Media-Queries */
+/* Laptop Large = 1440px */
+@media screen and (min-width:1440px){
+   /* No changes */ 
+}
+
+
+/* Laptop = 1024px */
+@media screen and (min-width:1024px) and (max-width:1439px){
+    html, body {
+        overflow-x: hidden;
+    }
+    header{
+        font-size: 10px;
+    }
+    .background-circles div:nth-child(1) {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .background-circles div:nth-child(2) {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .background-circles div:nth-child(3) {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .background-circles div:nth-child(4) {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .background-circles div:nth-child(5) {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .background-circles div:nth-child(6) {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .background-circles div:nth-child(7) {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .background-circles div:nth-child(8) {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .background-circles div:nth-child(9) {
+        width: 20px;
+        height: 20px;
+    } 
+}
+
+/* Tablet = 768px */
+@media screen and (min-width:768px) and (max-width:1023px){
+    html, body {
+        overflow-x: hidden;
+    }
+    .background-circles div:nth-child(1) {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .background-circles div:nth-child(2) {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .background-circles div:nth-child(3) {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .background-circles div:nth-child(4) {
+        width: 85px;
+        height: 85px;
+        left: 85%;
+    }
+    
+    .background-circles div:nth-child(5) {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .background-circles div:nth-child(6) {
+        width: 85px;
+        height: 85px;
+    }
+    
+    .background-circles div:nth-child(7) {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .background-circles div:nth-child(8) {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .background-circles div:nth-child(9) {
+        width: 15px;
+        height: 15px;
+    } 
+}
+
+/* Mobile Large = 425px */
+@media screen and (min-width:425px) and (max-width:767px){
+    html, body {
+        overflow-x: hidden;
+    }
+    nav {
+        /* background: linear-gradient(to bottom, #B38CE5, white); */
+        /* opacity: 0.5; */
+        flex: 1;
+        overflow: hidden; 
+        white-space: nowrap;
+    }
+    nav > ul {
+        justify-content: center; 
+    }
+    nav > ul > li {
+        margin: 0 10px;
+        flex-shrink: 0; 
+    }
+    nav > ul > li > a {
+        font-size: 12px;
+    }
+    .background-circles div:nth-child(1) {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .background-circles div:nth-child(2) {
+        width: 30px;
+        height: 35px;
+    }
+    
+    .background-circles div:nth-child(3) {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .background-circles div:nth-child(4) {
+        width: 75px;
+        height: 75px;
+        left: 75%;
+    }
+    
+    .background-circles div:nth-child(5) {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .background-circles div:nth-child(6) {
+        width: 75px;
+        height: 75px;
+    }
+    
+    .background-circles div:nth-child(7) {
+        width: 10px;
+        height: 10px;
+        
+    }
+    
+    .background-circles div:nth-child(8) {
+        width: 90px;
+        height: 90px;
+        left: 75%;
+    }
+    
+    .background-circles div:nth-child(9) {
+        width: 10px;
+        height: 10px;
+    } 
+}
+
+/* Mobile Medium = 375px */
+@media screen and (min-width:375px) and (max-width:424px){
+    html, body {
+        overflow-x: hidden;
+    }
+    nav {
+        /* background: linear-gradient(to bottom, #B38CE5, white); */
+        /* opacity: 0.5; */
+        flex: 1;
+        overflow: hidden; 
+        white-space: nowrap;
+    }
+    nav > ul {
+        justify-content: center; 
+    }
+    nav > ul > li {
+        margin: 0 10px;
+        flex-shrink: 0; 
+    }
+    nav > ul > li > a {
+        font-size: 10px;
+    }
+    .background-circles div:nth-child(1) {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .background-circles div:nth-child(2) {
+        width: 30px;
+        height: 35px;
+    }
+    
+    .background-circles div:nth-child(3) {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .background-circles div:nth-child(4) {
+        width: 75px;
+        height: 75px;
+        left: 75%;
+    }
+    
+    .background-circles div:nth-child(5) {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .background-circles div:nth-child(6) {
+        width: 75px;
+        height: 75px;
+    }
+    
+    .background-circles div:nth-child(7) {
+        width: 10px;
+        height: 10px;
+        
+    }
+    
+    .background-circles div:nth-child(8) {
+        width: 90px;
+        height: 90px;
+        left: 75%;
+    }
+    
+    .background-circles div:nth-child(9) {
+        width: 10px;
+        height: 10px;
+    } 
+}
+
+/* Mobile Small = 320px */
+@media screen and (min-width:320px) and (max-width:374px){
+    html, body {
+        overflow-x: hidden;
+    }
+    nav {
+        /* background: linear-gradient(to bottom, #B38CE5, white); */
+        /* opacity: 0.5; */
+        flex: 1;
+        overflow: hidden; 
+        white-space: nowrap;
+        
+    }
+    nav > ul > li {
+        margin: 0 10px;
+        flex-shrink: 0;
+    }
+    nav > ul > li > a {
+        font-size: 9px;
+    }
+    ul{
+        padding-left: 0;
+    }
+    .background-circles div:nth-child(1) {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .background-circles div:nth-child(2) {
+        width: 30px;
+        height: 35px;
+    }
+    
+    .background-circles div:nth-child(3) {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .background-circles div:nth-child(4) {
+        width: 75px;
+        height: 75px;
+        left: 75%;
+    }
+    
+    .background-circles div:nth-child(5) {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .background-circles div:nth-child(6) {
+        width: 75px;
+        height: 75px;
+    }
+    
+    .background-circles div:nth-child(7) {
+        width: 10px;
+        height: 10px;
+        
+    }
+    
+    .background-circles div:nth-child(8) {
+        width: 90px;
+        height: 90px;
+        left: 70%;
+    }
+    
+    .background-circles div:nth-child(9) {
+        width: 10px;
+        height: 10px;
+        top: 95%;
+    } 
+}

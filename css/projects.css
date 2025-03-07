@@ -1,0 +1,557 @@
+#projects {
+    background-color: #2B0636;
+    display: flex;
+    height: 100vh;
+}
+
+.project-content{
+    margin-top: 80px;
+    width: 100%;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.project-content h1{
+    color: white;
+    font-family: "Madimi One", serif;
+    font-weight:100;
+    font-style:normal;
+    font-size: 60px;
+    margin-top: 8px; 
+    margin-bottom: 0; 
+    text-align: center;
+    text-shadow: 
+        3px 3px 0 black,  
+        -3px -3px 0 black,  
+        3px -3px 0 black, 
+        -3px 3px 0 black;
+}
+
+.project-content #black-text{
+    color: black;
+    font-family: "Madimi One", serif;
+    font-weight:100;
+    font-style:normal;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 
+        3px 3px 0 white,  
+        -3px -3px 0 white,  
+        3px -3px 0 white, 
+        -3px 3px 0 white;
+}
+
+.my-projects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.tic-tac-toe-img{
+    overflow: hidden;
+    width: 35vw; 
+    height: 35vw; 
+    border-radius: 15px;
+}
+
+.tic-tac-toe-img img{
+    width: 35vw;
+    height: 35vw;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 0;
+}
+
+.tic-tac-toe-content{
+    padding-top: 20px;
+    width: 35vw;
+    height: 35vw;
+    border-radius: 15px;
+    opacity: 0.9;
+    background: linear-gradient(to bottom, #5C21A8, #9D9393);
+    /* background: linear-gradient(to bottom, rgba(92, 33, 168, 0.9), rgba(157, 147, 147, 0.9)); */
+    text-align: center;
+    
+    position: relative;
+    top: -3vw;
+    bottom: 0px;
+
+    transition:transform 1s ease-in-out;
+}
+
+.tic-tac-toe-content h4{
+    color: white;
+    font-family: "Mada", serif;
+    font-weight: bold;
+    font-style:normal;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.tic-tac-toe-content p{
+    color: white;
+    font-family: "Mada", serif;
+    font-weight: normal;
+    font-style:normal;
+    font-size: 28px;
+    padding-top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0;
+    cursor: pointer;
+}
+
+.tic-tac-toe-content #arrow-up{
+    width: 40px;
+    height: 40px;
+}
+
+.tic-tac-toe{
+    width: 35vw;
+    height: 35vw;
+    position: relative;
+    top: 12vh;
+    left: 8vw;
+}
+
+.tic-tac-toe:hover  .tic-tac-toe-content{
+    transform: translateY(-32vw);
+}
+
+
+.ciel-clothing-store-img{
+    overflow: hidden;
+    width: 43vw; 
+    height: 25vw; 
+    border-radius: 15px;
+}
+
+.clothing-store-content h4{
+    color: white;
+    font-family: "Mada", serif;
+    font-weight: bold;
+    font-style:normal;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.clothing-store-content p{
+    color: white;
+    font-family: "Mada", serif;
+    font-weight: normal;
+    font-style:normal;
+    font-size: 25px;
+    padding-top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0;
+    cursor: pointer;
+}
+
+.clothing-store-content #arrow-up{
+    width: 40px;
+    height: 40px;
+}
+
+.ciel-clothing-store-img img{
+    width: 43vw;
+    height: 25vw;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 0;
+}
+
+.clothing-store-content{
+    padding-top: 20px;
+    width: 43vw;
+    height: 25vw;
+    opacity: 0.9;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, #151E52, #6F7074);
+    /* background: linear-gradient(to bottom, rgba(21, 30, 82, 0.9), rgba(111, 112, 116, 0.9)); */
+    text-align: center;
+
+    transition: transform 1s ease-in-out;
+    position: relative;
+    top: -3vw;
+    bottom: 0px;
+}
+
+.ciel-clothing-store{
+    width: 43vw;
+    bottom: 0px;
+    position: relative;
+    top: 20vh;
+}
+
+.ciel-clothing-store:hover .clothing-store-content{
+    transform: translateY(-23vw);
+}
+
+/* Media-Queries */
+/* Laptop Large = 1440px */
+@media screen and (min-width:1440px){
+    /* No changes */ 
+}
+
+/* Laptop = 1024px */
+@media screen and (min-width:1024px) and (max-width:1439px){
+    .project-content h1{
+       font-size: 50px;
+    }
+    .project-content #black-text{
+       font-size: 50px;
+    }
+    .tic-tac-toe-content h4{
+        font-size: 30px;
+    }
+    
+    .tic-tac-toe-content p{
+        font-size: 18px;
+    }
+    .clothing-store-content h4{
+        font-size: 30px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    
+    .clothing-store-content p{
+        font-size: 18px;
+        margin-top: 0;
+    }
+}
+
+/* Tablet = 768px */
+@media screen and (min-width:768px) and (max-width:1023px){
+    .project-content h1{
+        font-size: 40px;
+     }
+     .project-content #black-text{
+        font-size: 40px;
+     }
+     .tic-tac-toe-content h4{
+         font-size: 20px;
+         margin-bottom: 0;
+         margin-top: 0;
+     }
+     
+     .tic-tac-toe-content p{
+         font-size: 15px;
+     }
+     .clothing-store-content h4{
+         font-size: 20px;
+         margin-bottom: 0;
+         margin-top: 0;
+     }
+     
+     .clothing-store-content p{
+         font-size: 15px;
+         margin-bottom: 0;
+     }
+     .tic-tac-toe-content #arrow-up{
+        width: 30px;
+        height: 30px;
+    }
+    .clothing-store-content #arrow-up{
+        width: 25px;
+        height: 25px;
+    }
+    .my-projects{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 180px;
+    }
+    .ciel-clothing-store-img img{
+        width: 350px;
+        height: 200px;
+    }
+    .ciel-clothing-store-img{
+        width: 350px;
+        height: 200px;
+    }
+    .clothing-store-content{
+        width: 350px;
+        height: 200px;
+    }
+    .ciel-clothing-store:hover .clothing-store-content{
+        transform: translateY(-200px);
+    }
+    .ciel-clothing-store{
+        width: 350px;
+        height: 200px;
+    }
+    .tic-tac-toe{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .tic-tac-toe:hover  .tic-tac-toe-content{
+        transform: translateY(-250px);
+    }
+    .tic-tac-toe-img{
+        width: 250px; 
+        height: 250px; 
+    }
+    
+    .tic-tac-toe-img img{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .tic-tac-toe-content{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* Mobile Large = 425px */
+@media screen and (min-width:425px) and (max-width:767px){
+    .project-content h1{
+        font-size: 30px;
+     }
+     .project-content #black-text{
+        font-size: 30px;
+     }
+     .tic-tac-toe-content h4{
+         font-size: 16px;
+         margin-bottom: 0;
+         margin-top: 0;
+     }
+     
+     .tic-tac-toe-content p{
+         font-size: 14px;
+     }
+     .clothing-store-content h4{
+         font-size: 16px;
+         margin-bottom: 0;
+         margin-top: 0;
+     }
+     
+     .clothing-store-content p{
+         font-size: 15px;
+         margin-bottom: 0;
+     }
+     .tic-tac-toe-content #arrow-up{
+        width: 30px;
+        height: 30px;
+    }
+    .clothing-store-content #arrow-up{
+        width: 25px;
+        height: 25px;
+    }
+    .my-projects{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 50px;
+    }
+    .ciel-clothing-store-img img{
+        width: 350px;
+        height: 200px;
+    }
+    .ciel-clothing-store-img{
+        width: 350px;
+        height: 200px;
+    }
+    .clothing-store-content{
+        width: 350px;
+        height: 200px;
+    }
+    .ciel-clothing-store:hover .clothing-store-content{
+        transform: translateY(-200px);
+    }
+    .ciel-clothing-store{
+        width: 350px;
+        height: 200px;
+    }
+    .tic-tac-toe{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .tic-tac-toe:hover  .tic-tac-toe-content{
+        transform: translateY(-250px);
+    }
+    .tic-tac-toe-img{
+        width: 250px; 
+        height: 250px; 
+    }
+    
+    .tic-tac-toe-img img{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .tic-tac-toe-content{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* Mobile Medium = 375px */
+@media screen and (min-width:375px) and (max-width:424px){
+    .project-content h1{
+        font-size: 30px;
+     }
+     .project-content #black-text{
+        font-size: 30px;
+     }
+     .tic-tac-toe-content h4{
+         font-size: 16px;
+         margin-bottom: 0;
+         margin-top: 0;
+     }
+     
+     .tic-tac-toe-content p{
+         font-size: 14px;
+     }
+     .clothing-store-content h4{
+         font-size: 16px;
+         margin-bottom: 0;
+         margin-top: 0;
+     }
+     
+     .clothing-store-content p{
+         font-size: 15px;
+         margin-bottom: 0;
+     }
+     .tic-tac-toe-content #arrow-up{
+        width: 30px;
+        height: 30px;
+    }
+    .clothing-store-content #arrow-up{
+        width: 25px;
+        height: 25px;
+    }
+    .my-projects{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 50px;
+    }
+    .ciel-clothing-store-img img{
+        width: 300px;
+        height: 200px;
+    }
+    .ciel-clothing-store-img{
+        width: 300px;
+        height: 200px;
+    }
+    .clothing-store-content{
+        width: 300px;
+        height: 200px;
+    }
+    .ciel-clothing-store:hover .clothing-store-content{
+        transform: translateY(-200px);
+    }
+    .ciel-clothing-store{
+        width: 300px;
+        height: 200px;
+    }
+    .tic-tac-toe{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .tic-tac-toe:hover  .tic-tac-toe-content{
+        transform: translateY(-250px);
+    }
+    .tic-tac-toe-img{
+        width: 250px; 
+        height: 250px; 
+    }
+    
+    .tic-tac-toe-img img{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .tic-tac-toe-content{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* Mobile Small = 320px */
+@media screen and (min-width:320px) and (max-width:374px){
+    .project-content h1{
+        font-size: 30px;
+     }
+     .project-content #black-text{
+        font-size: 30px;
+     }
+     .tic-tac-toe-content h4{
+         font-size: 16px;
+         margin-bottom: 0;
+         margin-top: 0;
+     }
+     
+     .tic-tac-toe-content p{
+         font-size: 14px;
+     }
+     .clothing-store-content h4{
+         font-size: 16px;
+         margin-bottom: 0;
+         margin-top: 0;
+     }
+     
+     .clothing-store-content p{
+         font-size: 15px;
+         margin-bottom: 0;
+     }
+     .tic-tac-toe-content #arrow-up{
+        width: 30px;
+        height: 30px;
+    }
+    .clothing-store-content #arrow-up{
+        width: 25px;
+        height: 25px;
+    }
+    .my-projects{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 10px;
+    }
+    .ciel-clothing-store-img img{
+        width: 300px;
+        height: 200px;
+    }
+    .ciel-clothing-store-img{
+        width: 300px;
+        height: 200px;
+    }
+    .clothing-store-content{
+        width: 300px;
+        height: 200px;
+    }
+    .ciel-clothing-store:hover .clothing-store-content{
+        transform: translateY(-200px);
+    }
+    .ciel-clothing-store{
+        width: 300px;
+        height: 200px;
+    }
+    .tic-tac-toe{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .tic-tac-toe:hover  .tic-tac-toe-content{
+        transform: translateY(-250px);
+    }
+    .tic-tac-toe-img{
+        width: 250px; 
+        height: 250px; 
+    }
+    
+    .tic-tac-toe-img img{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .tic-tac-toe-content{
+        width: 250px;
+        height: 250px;
+    }
+}

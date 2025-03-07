@@ -1,0 +1,553 @@
+#contact {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.contact-content{
+    margin: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-content h1{
+    color: #5C21A8;
+    font-family: "Madimi One", serif;
+    font-weight:100;
+    font-style:normal;
+    font-size: 60px;
+    margin-top: 8px;  
+    text-align: center;
+    text-shadow: 
+        3px 3px 0 white,  
+        -3px -3px 0 white,  
+        3px -3px 0 white, 
+        -3px 3px 0 white;
+}
+
+.details{
+    display: flex;
+}
+.contact-details{
+    width: 50%;
+}
+
+/* .email-details{
+    width: 50%;
+} */
+
+.icon-circle img{
+    width: 30px; 
+    height: 30px; 
+    object-fit: cover;
+}
+
+.location{
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.contact-number{
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.email{
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.icon{
+    width: 20%;
+}
+
+.icon-circle{
+    border: 2px solid white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;   
+}
+
+.icon-circle:hover{
+    background-color: #B38CE5;
+}
+
+.contact-details p{
+    color: white;
+    font-family: "Mada", serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 20px;
+    margin-top: 0; 
+}
+
+.contact-details span{
+    color: #9747FF;
+}
+
+.email a{
+    text-decoration: none;
+    color: #9747FF;
+    font-family: "Mada", serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.first-line{
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 95px;
+}
+
+.your-name{
+    width: 50%;
+}
+
+.your-name input{
+    border: 4px solid white;
+    background-color: black;
+    color: white;
+    font-family: "Mada", serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.your-email input{
+    border: 4px solid white;
+    background-color: black;
+    color: white;
+    font-family: "Mada", serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.subject input{
+    border: 4px solid white;
+    background-color: black;
+    color: white;
+    font-family: "Mada", serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 30px;
+    width: 95%;
+}
+
+.email-me textarea{
+    border: 4px solid white;
+    background-color: black;
+    color: white;
+    font-family: "Mada", serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+
+.button-div{
+    display: flex;
+    justify-content: center;
+}
+
+.button-div button{
+    border-radius: 15px;
+    background-color: #B38CE5;
+    color: black;
+    font-family: "Mada", serif;
+    font-weight: 700;
+    font-style:normal;
+    font-size: 30px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 1px solid #B38CE5;
+    box-shadow:0 0 15px #B38CE5;
+}
+
+.button-div button:hover{
+    box-shadow: none;
+}
+
+/* Media-Queries */
+/* Laptop Large = 1440px */
+@media screen and (min-width:1440px){
+    /* No changes */ 
+}
+
+/* Laptop = 1024px */
+@media screen and (min-width:1024px) and (max-width:1439px){
+    .contact-content h1{
+        font-size: 50px;
+    }
+    .icon-circle img{
+        width: 20px; 
+        height: 20px; 
+    }
+    .icon-circle{
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;  
+    }
+    .contact-details p{
+       font-size: 16px;
+    }
+    .email a{
+        font-size: 16px;
+    }
+    .your-name input{
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+    .your-email input{
+        font-size: 16px;
+        padding: 10px;
+    }
+    .first-line{
+        gap: 90px;
+    }
+    .email-me textarea{
+        font-size: 16px;
+    }
+    .button-div button{
+        font-size: 25px;
+    }
+}
+
+/* Tablet = 768px */
+@media screen and (min-width:768px) and (max-width:1023px){
+    .contact-content h1{
+        font-size: 40px;
+        margin-bottom: 10px;
+        margin-left: -100px;
+    }
+    .icon-circle img{
+        width: 20px; 
+        height: 20px; 
+    }
+    .icon-circle{
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;  
+    }
+    .contact-details p{
+       font-size: 13px;
+    }
+    .email a{
+        font-size: 13px;
+    }
+    .your-name input{
+        font-size: 13px;
+        padding: 10px;
+    }
+    
+    .your-email input{
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .subject input{
+        font-size: 13px;
+        padding: 10px;
+        margin-bottom: 30px;
+        width: 460px;
+    }
+    
+    .email-me textarea{
+        font-size: 13px;
+    }
+    .button-div button{
+        margin-left: 120px;
+        font-size: 20px;
+        white-space: nowrap;
+    }
+    .details{
+        display: block;
+        flex-direction: row;
+    }
+    .contact-details{
+        width: 0%;
+    }
+    .email-details{
+        width: 0%;
+    }
+    .text{
+        margin-left: 80px;
+        display: inline;
+        white-space: nowrap;
+    }
+    .first-line{
+        display: flex;
+        gap: 310px;
+    }
+    .button-div{
+        justify-content: space-around;
+    }
+    .email-me{
+        margin-left: 100px;
+    }
+}
+
+/* Mobile Large = 425px */
+@media screen and (min-width:425px) and (max-width:767px){
+    .contact-content h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+        margin-left: -100px;
+        text-shadow: 
+        2px 2px 0 white,  
+        -2px -2px 0 white,  
+        2px -2px 0 white, 
+        -2px 2px 0 white;
+    }
+    .icon-circle img{
+        width: 20px; 
+        height: 20px; 
+    }
+    .icon-circle{
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;  
+    }
+    .contact-details p{
+       font-size: 13px;
+    }
+    .email a{
+        font-size: 13px;
+    }
+    .subject input{
+        font-size: 13px;
+        padding: 10px;
+        margin-bottom: 30px;
+        width: 320px;
+    }
+    .your-name input{
+        font-size: 12px;
+        padding: 8px;
+        width: 320px;
+    }
+    
+    .your-email input{
+        font-size: 12px;
+        padding: 8px;
+        width: 320px;
+    }
+    
+    .email-me textarea{
+        font-size: 12px;
+        width: 330px;
+    }
+    .button-div button{
+        margin-left: 80px;
+        font-size: 18px;
+        white-space: nowrap;
+    }
+    .details{
+        display: block;
+        flex-direction: row;
+    }
+    .contact-details{
+        width: 0%;
+    }
+    .email-details{
+        width: 0%;
+    }
+    .text{
+        margin-left: 80px;
+        display: inline;
+        white-space: nowrap;
+    }
+    .first-line{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .button-div{
+        justify-content: space-around;
+    }
+}
+
+/* Mobile Medium = 375px */
+@media screen and (min-width:375px) and (max-width:424px){
+    .contact-content h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+        margin-left: -100px;
+        text-shadow: 
+        2px 2px 0 white,  
+        -2px -2px 0 white,  
+        2px -2px 0 white, 
+        -2px 2px 0 white;
+    }
+    .icon-circle img{
+        width: 20px; 
+        height: 20px; 
+    }
+    .icon-circle{
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;  
+    }
+    .contact-details p{
+       font-size: 13px;
+    }
+    .email a{
+        font-size: 13px;
+    }
+    .subject input{
+        font-size: 13px;
+        padding: 10px;
+        margin-bottom: 30px;
+        width: 290px;
+    }
+    .your-name input{
+        font-size: 11px;
+        padding: 8px;
+        width: 290px;
+    }
+    
+    .your-email input{
+        font-size: 11px;
+        padding: 8px;
+        width: 290px;
+    }
+    
+    .email-me textarea{
+        font-size: 11px;
+        width: 300px;
+    }
+    .button-div button{
+        margin-left: 50px;
+        font-size: 18px;
+        white-space: nowrap;
+    }
+    .details{
+        display: block;
+        flex-direction: row;
+    }
+    .contact-details{
+        width: 0%;
+    }
+    .email-details{
+        width: 0%;
+    }
+    .text{
+        margin-left: 60px;
+        display: inline;
+        white-space: nowrap;
+    }
+    .first-line{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .button-div{
+        justify-content: space-around;
+    }
+    .details{
+        margin-left: -15px;
+    }
+}
+
+/* Mobile Small = 320px */
+@media screen and (min-width:320px) and (max-width:374px){
+    .contact-content h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+        margin-left: -100px;
+        text-shadow: 
+        2px 2px 0 white,  
+        -2px -2px 0 white,  
+        2px -2px 0 white, 
+        -2px 2px 0 white;
+    }
+    .icon-circle img{
+        width: 15px; 
+        height: 15px; 
+    }
+    .icon-circle{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;  
+    }
+    .contact-details p{
+       font-size: 12px;
+    }
+    .email a{
+        font-size: 12px;
+    }
+    .subject input{
+        font-size: 10px;
+        padding: 5px;
+        margin-bottom: 20px;
+        width: 210px;
+    }
+    .your-name input{
+        font-size: 10px;
+        padding: 5px;
+        width: 210px;
+    }
+    
+    .your-email input{
+        font-size: 10px;
+        padding: 5px;
+        width: 210px;
+    }
+    
+    .email-me textarea{
+        font-size: 11px;
+        width: 210px;
+    }
+    .button-div button{
+        margin-left: 20px;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+    .details{
+        display: block;
+        flex-direction: row;
+    }
+    .contact-details{
+        width: 0%;
+    }
+    .email-details{
+        width: 0%;
+    }
+    .text{
+        margin-left: 50px;
+        display: inline;
+        white-space: nowrap;
+    }
+    .first-line{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .button-div{
+        justify-content: space-around;
+    }
+    .details{
+        margin-left: -15px;
+    }
+    .first-line{
+        margin-bottom: 20px;
+    }
+}

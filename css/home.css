@@ -1,0 +1,417 @@
+.hero-content{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#hero {
+    background-color: #2B0636;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+}
+
+.hero-content .highlight {
+    color: #9747FF;
+}
+
+.buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.download-cv{
+    background-color: #9747FF;
+    border: 1px solid #9747FF;
+    border-radius: 12px;
+    padding: 12px 60px;
+    font-family: "Mada", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 30px;
+    color: white;
+    box-shadow:0 0 50px #9747FF;
+}
+.hire-me{
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 12px 60px;
+    font-family: "Mada", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 30px;
+    color: white;
+    box-shadow:0 0 50px black;
+}
+
+.download-cv:hover{
+    box-shadow: none;
+}
+
+.hire-me:hover{
+    box-shadow: none;
+}
+
+.buttons{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-image img {
+    border: 10px solid #9747FF;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 1s ease;
+}
+
+.hero-image img:hover{
+    border: none;
+    box-shadow: 0 0 100px #9747FF;
+    transform: scale(1.05);
+}
+
+.hero-content h3{
+    font-family: "Madimi One", serif;
+    font-weight:100;
+    font-style:normal;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.hero-content h1{
+    color: white;
+    font-family: "Madimi One", serif;
+    font-weight:100;
+    font-style:normal;
+    font-size: 60px;
+    margin-top: 8px;  
+    margin-left: 50px;
+    margin-bottom: 0;
+}
+.hero-content h1:hover{
+    color: black;
+}
+
+.hero-content h4{
+    color: white; 
+    font-family: "Madimi One", serif;
+    font-weight:100;
+    font-style:normal;
+    font-size: 30px; 
+    margin-top: 0;
+    margin-left: 90px;
+}
+
+.hero-content p{
+    color: white;
+    font-family: "Mada", serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 25px;  
+}
+
+
+.social-links{
+    width: 120px;
+    margin-bottom: 40px;
+    display: flex;
+}
+#linkedin{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    padding: 5px;
+}
+#github{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    padding: 5px;
+}
+#instagram{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    padding: 5px;
+}
+#facebook{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    padding: 5px;
+}
+#icon-cricle{
+    border: 2px solid white;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+#icon-cricle:hover{
+    background-color: #B38CE5;
+}
+
+
+/*---------------------------- Media-Queries ------------------------------ */
+
+/* Laptop Large = 1440px */
+@media screen and (min-width:1440px){
+    /* No changes */ 
+}
+
+/* Laptop = 1024px */
+@media screen and (min-width:1024px) and (max-width:1439px){
+    .hero-content h3{
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    .hero-content h1{
+        font-size: 50px;
+    }
+    .hero-image img {
+        width: 300px;
+        height: 300px;
+    }
+    .hero-content h4{
+        font-size: 20px; 
+    }
+    .hero-content p{
+        font-size: 20px;  
+    }
+    .download-cv{
+        font-size: 25px;
+    }
+    .hire-me{
+        font-size: 25px;
+    }
+}
+
+/* Tablet = 768px */
+@media screen and (min-width:768px) and (max-width:1023px){
+    .hero-content{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .hero-content h3{
+        font-size: 25px;
+        margin-left: 20px;
+    }
+    .hero-content h1{
+        font-size: 40px;
+    }
+    .hero-image img {
+        width: 250px;
+        height: 250px;
+        margin-right: 20px;
+    }
+    .hero-content h4{
+        font-size: 14px; 
+    }
+    .hero-content p{
+        font-size: 16px;  
+    }
+    .download-cv{
+        font-size: 20px;
+    }
+    .hire-me{
+        font-size: 20px;
+    }
+    .buttons{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    #linkedin,
+    #github,
+    #instagram,
+    #facebook{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* Mobile Large = 425px */
+@media screen and (min-width:425px) and (max-width:767px){
+    .hero-content{
+        /* margin-right: 20px; */
+        margin-left: 10px;
+    }
+    .hero-content h3{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .hero-content h1{
+        font-size: 28px;
+        width: 280px;
+        display: block;
+    }
+    .hero-image img {
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+        margin-left: -10px;
+        margin-bottom: 60px;
+        border: 5px solid #9747FF;
+    }
+    .hero-content h4{
+        font-size: 14px; 
+        width: 280px;
+        display: block;
+    }
+    .hero-content p{
+        font-size: 12px;
+        padding: 20px;
+        text-align: center;
+    }
+    .download-cv{
+        font-size: 20px;
+    }
+    .hire-me{
+        font-size: 20px;
+    }
+    .buttons{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    #linkedin,
+    #github,
+    #instagram,
+    #facebook{
+        width: 20px;
+        height: 20px;
+    }
+    .social-links{
+        width: 110%;
+        margin-top: 40px;
+    }
+}
+
+/* Mobile Medium = 375px */
+@media screen and (min-width:375px) and (max-width:424px){
+    .hero-content{
+        margin-left: 10px;
+    }
+    .hero-content h3{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .hero-content h1{
+        font-size: 28px;
+        width: 280px;
+        display: block;
+    }
+    .hero-image img {
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+        margin-left: -20px;
+        margin-bottom: 60px;
+        border: 5px solid #9747FF;
+    }
+    .hero-content h4{
+        font-size: 14px; 
+        width: 250px;
+        display: block;
+    }
+    .hero-content p{
+        width: 150px;
+        font-size: 10px;
+        padding: 13px;
+        text-align: center;
+        display: block;
+    }
+    .download-cv{
+        font-size: 20px;
+    }
+    .hire-me{
+        font-size: 20px;
+    }
+    .buttons{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    #linkedin,
+    #github,
+    #instagram,
+    #facebook{
+        width: 20px;
+        height: 20px;
+    }
+    .social-links{
+        width: 110%;
+        margin-top: 40px;
+    }
+}
+
+/* Mobile Small = 320px */
+@media screen and (min-width:320px) and (max-width:374px){
+    .hero-content{
+        margin-left: 10px;
+    }
+    .hero-content h3{
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    .hero-content h1{
+        font-size: 25px;
+        width: 280px;
+        display: block;
+    }
+    .hero-image img {
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+        margin-left: -50px;
+        margin-bottom: 100px;
+        border: 5px solid #9747FF;
+    }
+    .hero-content h4{
+        font-size: 14px; 
+        width: 230px;
+        display: block;
+    }
+    .hero-content p{
+        width: 120px;
+        font-size: 10px;
+        padding: 13px;
+        text-align: center;
+        display: block;
+    }
+    .download-cv{
+        font-size: 20px;
+    }
+    .hire-me{
+        font-size: 20px;
+    }
+    .buttons{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 50px;
+    }
+    #linkedin,
+    #github,
+    #instagram,
+    #facebook{
+        width: 20px;
+        height: 20px;
+    }
+    .social-links{
+        margin-top: 60px;
+    }
+}

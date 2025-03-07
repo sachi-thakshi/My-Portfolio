@@ -1,0 +1,311 @@
+#about{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.about-content .me-highlight{
+    color: #9747FF;
+}
+
+.about-image img {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    object-fit:cover;
+    box-shadow: 0 0 100px white;
+    transition: transform 0.7s ease;
+}
+
+.about-image img:hover{
+    transform: scale(1.05);
+}
+
+.about-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-content h1{
+    color: white;
+    font-family: "Madimi One", serif;
+    font-weight:100;
+    font-style:normal;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.about-content h3{
+    color: white;
+    font-family: "Madimi One", serif;
+    font-weight:100;
+    font-style:normal;
+    font-size: 30px; 
+    margin-top: 0;  
+}
+
+.about-content #paragraph{
+    color: white;
+    font-family: "Mada", serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 20px; 
+}
+
+.my-informations p{
+    color: white;
+    font-family: "Mada", serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size: 25px; 
+}
+
+.my-informations #info{
+    color: #9747FF;
+    font-weight: 800;
+}
+
+/* background-circles */
+#about .background-circles-about {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* So they don't interfere with clicks */
+}
+
+#about.background-circles-about div {
+    position: absolute;
+    border-radius: 50%;
+    background-color:rgba(179, 140, 229, 0.21);
+    opacity: 0.5;
+    animation: circle-animation-about 3s infinite;
+}
+
+#about .background-circles-about div:nth-child(1) {
+    width: 50px;
+    height: 50px;
+    top: 5%;
+    left: 5%;
+    animation-delay: 0s;
+}
+
+#about .background-circles-about div:nth-child(2) {
+    width: 50px;
+    height: 50px;
+    top: 20%;
+    left: 25%;
+    animation-delay: 0.5s;
+}
+
+#about .background-circles-about div:nth-child(3) {
+    width: 50px;
+    height: 50px;
+    top: 25%;
+    left: 40%;
+    animation-delay: 0.5s;
+}
+
+#about .background-circles-about div:nth-child(4) {
+    width: 100px;
+    height: 100px;
+    top: 15%;
+    left: 90%;
+}
+
+#about .background-circles-about div:nth-child(5) {
+    width: 50px;
+    height: 50px;
+    top: 70%;
+    left: 60%;
+}
+
+#about .background-circles-about div:nth-child(6) {
+    width: 100px;
+    height: 100px;
+    top: 85%;
+    left: 40%;
+}
+
+#about .background-circles-about div:nth-child(7) {
+    width: 30px;
+    height: 30px;
+    top: 95%;
+    left: 20%;
+}
+
+#about .background-circles-about div:nth-child(8) {
+    width: 150px;
+    height: 150px;
+    top: 80%;
+    left: 80%;
+}
+
+#about .background-circles-about div:nth-child(9) {
+    width: 30px;
+    height: 30px;
+    top: 90%;
+    left: 95%;
+}
+
+@keyframes circle-animation-about {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+
+
+
+/* Media-Queries */
+/* Laptop Large = 1440px */
+@media screen and (min-width:1440px){
+    /* No changes */ 
+}
+
+/* Laptop = 1024px */
+@media screen and (min-width:1024px) and (max-width:1439px){
+    .about-content h1{
+        font-size: 40px;
+    } 
+    .about-content h3{
+        font-size: 25px; 
+    }
+    .about-content #paragraph{
+        font-size: 18px; 
+    }
+    .my-informations p{
+       font-size: 20px; 
+    }
+    .about-image img {
+       width: 300px;
+       height: 300px;
+    }
+}
+
+/* Tablet = 768px */
+@media screen and (min-width:768px) and (max-width:1023px){
+    .about-content h1{
+        font-size: 40px;
+    } 
+    .about-content h3{
+        font-size: 25px; 
+    }
+    .about-content #paragraph{
+        font-size: 15px; 
+    }
+    .my-informations p{
+       font-size: 20px; 
+    }
+    .about-image img {
+       width: 250px;
+       height: 250px;
+    }
+}
+
+/* Mobile Large = 425px */
+@media screen and (min-width:425px) and (max-width:767px){
+    .about-content{
+        width: 100%;
+        margin-left: -300px;
+        padding: 20px;
+    }
+    .about-content h1{
+        font-size: 28px;
+    } 
+    .about-content h3{
+        font-size: 25px; 
+    }
+    .about-content #paragraph{
+        font-size: 12px;
+        margin-bottom: 180px;
+        text-align: center; 
+    }
+    .my-informations p{
+       font-size: 16px; 
+    }
+    .my-informations{
+        margin-top: 80px;
+    }
+    .about-image img {
+       width: 200px;
+       height: 200px;
+       margin-left: 120px;
+    }
+}
+
+/* Mobile Medium = 375px */
+@media screen and (min-width:375px) and (max-width:424px){
+    .about-content{
+        width: 100%;
+        margin-left: -300px;
+        padding: 20px;
+    }
+    .about-content h1{
+        font-size: 28px;
+    } 
+    .about-content h3{
+        font-size: 25px; 
+    }
+    .about-content #paragraph{
+        font-size: 12px;
+        margin-bottom: 180px;
+        text-align: center; 
+    }
+    .my-informations p{
+       font-size: 16px; 
+    }
+    .my-informations{
+        margin-top: 80px;
+    }
+    .about-image img {
+       width: 200px;
+       height: 200px;
+       margin-left: 100px;
+    }
+}
+
+/* Mobile Small = 320px */
+@media screen and (min-width:320px) and (max-width:374px){
+    .about-content{
+        width: 100%;
+        margin-left: -260px;
+        padding: 20px;
+    }
+    .about-content h1{
+        font-size: 25px;
+    } 
+    .about-content h3{
+        font-size: 22px; 
+    }
+    .about-content #paragraph{
+        font-size: 11px;
+        margin-bottom: 180px;
+        text-align: center; 
+    }
+    .my-informations p{
+       font-size: 14px; 
+    }
+    .my-informations{
+        margin-top: 80px;
+    }
+    .about-image img {
+       width: 180px;
+       height: 180px;
+       margin-left: 70px;
+    }
+}

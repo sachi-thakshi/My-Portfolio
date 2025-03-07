@@ -1,0 +1,376 @@
+#skills {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.skills-content{
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills-content h1{
+    color: white;
+    font-family: "Madimi One", serif;
+    font-weight:100;
+    font-style:normal;
+    font-size: 60px;
+    margin-top: 8px;  
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#highlight-skills{
+    color: #9747FF;   
+}
+
+.skills-content p{
+    text-align: center;
+    color: white;
+    font-family: "Mada", serif;
+    font-weight: 700;
+    font-style:normal;
+    font-size: 25px;
+    margin: 20px;
+}
+
+#skill-name{
+    color: white;
+    font-family: "Mada", serif;
+    font-weight: 700;
+    font-style:normal;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.my-skills-left{
+    width: 50%;
+    margin-right: 100px;
+}
+.my-skills-right{
+    width: 50%;
+}
+.my-skills{
+    display: flex;
+    margin: 30px;
+}
+.progress-container{
+    background-color: white;
+    width: 100%;
+    height: 25px;
+}
+
+.skills-html{
+    background-color: #9747FF;
+    width: 95%;
+    height: 25px;
+    animation: load-html 2s 1;
+}
+
+.skills-css{
+    background-color: #9747FF;
+    width: 90%;
+    height: 25px;
+    animation: load-css 2s 1;
+}
+
+.skills-js{
+    background-color: #9747FF;
+    width: 80%;
+    height: 25px;
+    animation: load-js 2s 1;
+}
+
+.skills-sql{
+    background-color: #9747FF;
+    width: 95%;
+    height: 25px;
+    animation: load-sql 2s 1;
+}
+
+.skills-java{
+    background-color: #9747FF;
+    width: 90%;
+    height: 25px;
+    animation: load-java 2s 1;
+}
+
+.skills-photoshop{
+    background-color: #9747FF;
+    width: 80%;
+    height: 25px;
+    animation: load-photoshop 2s 1;
+}
+
+.skills-javafx{
+    background-color: #9747FF;
+    width: 95%;
+    height: 25px;
+    animation: load-javafx 2s 1;
+}
+
+@keyframes load-html {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 95%;
+    }
+}
+
+@keyframes load-css {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 90%;
+    }
+}
+
+@keyframes load-js {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 80%;
+    }
+}
+
+@keyframes load-sql {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 95%;
+    }
+}
+
+@keyframes load-java {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 90%;
+    }
+}
+
+@keyframes load-photoshop {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 80%;
+    }
+}
+
+@keyframes load-javafx {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 95%;
+    }
+}
+
+.icons-container{
+    margin: 30px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+img{
+    width: 48px;
+    height: 48px;
+}
+
+
+/* Media-Queries */
+/* Laptop Large = 1440px */
+@media screen and (min-width:1440px){
+  /* No changes */ 
+}
+
+/* Laptop = 1024px */
+@media screen and (min-width:1024px) and (max-width:1439px){
+  .skills-content h1{
+    font-size: 50px;
+  }
+  .skills-content p{
+    font-size: 20px;
+  }
+  .my-skills{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+}
+
+/* Tablet = 768px */
+@media screen and (min-width:768px) and (max-width:1023px){
+    .skills-content h1{
+      font-size: 40px;
+    }
+    .skills-content p{
+      font-size: 16px;
+    }
+    .my-skills{
+      margin-top: 0;
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    #skill-name{
+      width: 150%;
+      font-weight: 500;
+      font-size: 10px;
+    }
+    img{
+      width: 40px;
+      height: 40px;
+    }
+    .icons-container{
+      margin-bottom: 0px;
+    }
+    .progress-container{
+      height: 20px;
+      width: 150%;
+    }
+  
+    .skills-html,
+    .skills-css,
+    .skills-js,
+    .skills-sql,
+    .skills-java,
+    .skills-photoshop,
+    .skills-javafx{
+      height: 20px;
+    }   
+}
+
+/* Mobile Large = 425px */
+@media screen and (min-width:425px) and (max-width:767px){
+    .skills-content h1{
+      font-size: 35px;
+    }
+    .skills-content p{
+      font-size: 14px;
+    }
+    .my-skills{
+      margin-top: 0;
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    #skill-name{
+      width: 180%;
+      font-weight: 500;
+      font-size: 10px;
+    }
+    img{
+      width: 20px;
+      height: 20px;
+    }
+    .progress-container{
+      height: 10px;
+      width: 180%;
+    }
+
+    .skills-html,
+    .skills-css,
+    .skills-js,
+    .skills-sql,
+    .skills-java,
+    .skills-photoshop,
+    .skills-javafx{
+      height: 10px;
+    }  
+}
+
+/* Mobile Medium = 375px */
+@media screen and (min-width:375px) and (max-width:424px){
+  .skills-content h1{
+    font-size: 35px;
+  }
+  .skills-content p{
+    font-size: 14px;
+  }
+  .my-skills{
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  #skill-name{
+    width: 180%;
+    font-weight: 500;
+    font-size: 10px;
+  }
+  img{
+    width: 20px;
+    height: 20px;
+  }
+  .progress-container{
+    height: 10px;
+    width: 180%;
+  }
+
+  .skills-html,
+  .skills-css,
+  .skills-js,
+  .skills-sql,
+  .skills-java,
+  .skills-photoshop,
+  .skills-javafx{
+    height: 10px;
+  }  
+}
+
+/* Mobile Small = 320px */
+@media screen and (min-width:320px) and (max-width:374px){
+  .skills-content h1{
+    font-size: 35px;
+  }
+  .skills-content p{
+    font-size: 14px;
+  }
+  .my-skills{
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  #skill-name{
+    width: 180%;
+    font-weight: 500;
+    font-size: 10px;
+  }
+  img{
+    width: 20px;
+    height: 20px;
+  }
+  .progress-container{
+    height: 8px;
+    width: 180%;
+  }
+
+  .skills-html,
+  .skills-css,
+  .skills-js,
+  .skills-sql,
+  .skills-java,
+  .skills-photoshop,
+  .skills-javafx{
+    height: 8px;
+  } 
+  .icons-container{
+    margin: 20px;
+    width: 90%;
+  }
+}
