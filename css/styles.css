@@ -44,7 +44,29 @@ nav > ul > li > a:hover {
     color: #B38CE5;
 }
 
+/* Burger menu */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    justify-content: space-between;
+    margin-right: 25px;
+}
 
+.burger-menu .line {
+    background-color: #fff;
+    height: 3px;
+    width: 100%;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
 
 /* background-circles */
 .background-circles {
@@ -167,7 +189,7 @@ nav > ul > li > a:hover {
         overflow-x: hidden;
     }
     header{
-        font-size: 10px;
+        font-size: 12px;
     }
     .background-circles div:nth-child(1) {
         width: 40px;
@@ -220,11 +242,41 @@ nav > ul > li > a:hover {
     html, body {
         overflow-x: hidden;
     }
+    
+    nav ul {
+        display: none; /* Hide the nav links by default */
+        position: absolute;
+        /* top: 60px; */
+        right: 10px;
+        background: linear-gradient(to bottom, rgba(179, 140, 229, 0.5), rgba(255, 255, 255, 0.5));
+        width: 600px;
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-right: 80px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Show burger menu on small screens */
+    .burger-menu {
+        display: flex;
+    }
+
+    /* Show the nav when the burger is clicked */
+    nav.active ul {
+        display: flex;
+    }
+
     .background-circles div:nth-child(1) {
         width: 35px;
         height: 35px;
     }
-    
+
     .background-circles div:nth-child(2) {
         width: 35px;
         height: 35px;
@@ -272,23 +324,41 @@ nav > ul > li > a:hover {
     html, body {
         overflow-x: hidden;
     }
-    nav {
-        /* background: linear-gradient(to bottom, #B38CE5, white); */
-        /* opacity: 0.5; */
-        flex: 1;
-        overflow: hidden; 
-        white-space: nowrap;
+    .burger-menu {
+        width: 20px;
+        height: 20px;
     }
-    nav > ul {
-        justify-content: center; 
+    nav ul {
+        display: none; /* Hide the nav links by default */
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        background: linear-gradient(to bottom, rgba(179, 140, 229, 0.5), rgba(255, 255, 255, 0.5));
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        justify-content: space-around;
+        margin-right: 80px;
+        font-size: 14px;
+        width: 250px;
     }
-    nav > ul > li {
-        margin: 0 10px;
-        flex-shrink: 0; 
+
+    nav ul li {
+        margin: 10px 0;
     }
-    nav > ul > li > a {
-        font-size: 12px;
+
+    /* Show burger menu on small screens */
+    .burger-menu {
+        display: flex;
     }
+
+    /* Show the nav when the burger is clicked */
+    nav.active ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+    }
+
     .background-circles div:nth-child(1) {
         width: 30px;
         height: 30px;
@@ -343,23 +413,41 @@ nav > ul > li > a:hover {
     html, body {
         overflow-x: hidden;
     }
-    nav {
-        /* background: linear-gradient(to bottom, #B38CE5, white); */
-        /* opacity: 0.5; */
-        flex: 1;
-        overflow: hidden; 
-        white-space: nowrap;
+    .burger-menu {
+        width: 20px;
+        height: 20px;
     }
-    nav > ul {
-        justify-content: center; 
+    nav ul {
+        display: none; /* Hide the nav links by default */
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        background: linear-gradient(to bottom, rgba(179, 140, 229, 0.5), rgba(255, 255, 255, 0.5));
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        justify-content: space-around;
+        margin-right: 80px;
+        font-size: 14px;
+        width: 250px;
     }
-    nav > ul > li {
-        margin: 0 10px;
-        flex-shrink: 0; 
+
+    nav ul li {
+        margin: 10px 0;
     }
-    nav > ul > li > a {
-        font-size: 10px;
+
+    /* Show burger menu on small screens */
+    .burger-menu {
+        display: flex;
     }
+
+    /* Show the nav when the burger is clicked */
+    nav.active ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+    }
+
     .background-circles div:nth-child(1) {
         width: 30px;
         height: 30px;
@@ -414,24 +502,41 @@ nav > ul > li > a:hover {
     html, body {
         overflow-x: hidden;
     }
-    nav {
-        /* background: linear-gradient(to bottom, #B38CE5, white); */
-        /* opacity: 0.5; */
-        flex: 1;
-        overflow: hidden; 
-        white-space: nowrap;
-        
+    .burger-menu {
+        width: 20px;
+        height: 20px;
     }
-    nav > ul > li {
-        margin: 0 10px;
-        flex-shrink: 0;
+    nav ul {
+        display: none; /* Hide the nav links by default */
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        background: linear-gradient(to bottom, rgba(179, 140, 229, 0.5), rgba(255, 255, 255, 0.5));
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 5px;
+        justify-content: space-around;
+        margin-right: 80px;
+        font-size: 11px;
+        width: 200px;
     }
-    nav > ul > li > a {
-        font-size: 9px;
+
+    nav ul li {
+        margin: 10px 0;
     }
-    ul{
-        padding-left: 0;
+
+    /* Show burger menu on small screens */
+    .burger-menu {
+        display: flex;
     }
+
+    /* Show the nav when the burger is clicked */
+    nav.active ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+    }
+
     .background-circles div:nth-child(1) {
         width: 30px;
         height: 30px;

@@ -26,21 +26,22 @@
 <body>
       <header>
 
-      <!-- Burger Image Icon -->
-        <!-- <div class="burger-icon">
-            <img src="assets/images/burger-icon-menu.png" alt="burger menu" id="burger-icon-img">
-        </div> -->
-
-        <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <div class="burger-menu" id="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+      </div>
+      
+      <nav id="nav">
+          <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+      </nav>
       </header>
       <main>
             <section id="hero">
@@ -48,7 +49,7 @@
                 <h3>Hello It's Me</h3>
                 <h1>Sachini Imbulagoda</h1>
                 <h4>And I'm a 
-                  <span class="highlight">Software Engineering Student & UI / UX Engineer</span>
+                  <span class="text-container" id="text-container"></span>
                 </h4>
                 <p>"As a software engineering student, I leverage animation as a third dimension to simplify complex interactions, 
                     using purposeful motion to guide users and enhance their understanding—never just for decoration, but for clarity 
@@ -423,5 +424,8 @@
                 </div>
             </section>
       </main>
+
+      <script src="/js/NavigationBar.js"></script>
+      <script src="/js/HomeText.js"></script>
 </body>
 </html>
