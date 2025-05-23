@@ -1,4 +1,4 @@
-const text = "Software Engineering Student & UI/UX Engineer   ";
+const text = "Software Engineering Student & UI/UX Engineering Student";
 const textContainer = document.getElementById("text-container");
 
 let index = 0;
